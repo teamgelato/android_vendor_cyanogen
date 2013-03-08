@@ -3,7 +3,6 @@ PRODUCT_COPY_FILES := \
     vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     device/lge/gelato/files/media/bootanimation.zip:system/media/bootanimation.zip \
     device/lge/gelato/files/media/somebodys.ogg:system/media/audio/ringtones/somebodys.ogg \
-    device/lge/thunderc/files/media/Clockopia.ttf:system/fonts/Clockopia.ttf \
     device/lge/gelato/files/media/DroidSans.ttf:system/fonts/DroidSans.ttf \
     device/lge/gelato/files/media/DroidSans-Bold.ttf:system/fonts/DroidSans-Bold.ttf \
     $(PRODUCT_COPY_FILES)
