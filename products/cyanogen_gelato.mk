@@ -1,14 +1,14 @@
 # Include the stock APNS config file instead of the dev one
-PRODUCT_COPY_FILES := \
-    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
-    device/lge/gelato/files/media/bootanimation.zip:system/media/bootanimation.zip \
-    device/lge/gelato/files/media/somebodys.ogg:system/media/audio/ringtones/somebodys.ogg \
-    device/lge/gelato/files/media/DroidSans.ttf:system/fonts/DroidSans.ttf \
-    device/lge/gelato/files/media/DroidSans-Bold.ttf:system/fonts/DroidSans-Bold.ttf \
-    $(PRODUCT_COPY_FILES)
+#PRODUCT_COPY_FILES := \
+#    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
+#    device/lge/gelato/files/media/bootanimation.zip:system/media/bootanimation.zip \
+#    device/lge/gelato/files/media/somebodys.ogg:system/media/audio/ringtones/somebodys.ogg \
+#    device/lge/gelato/files/media/DroidSans.ttf:system/fonts/DroidSans.ttf \
+#    device/lge/gelato/files/media/DroidSans-Bold.ttf:system/fonts/DroidSans-Bold.ttf \
+#    $(PRODUCT_COPY_FILES)
 
 # Inherit device configuration for the gelato.
-$(call inherit-product, device/lge/gelato/device_gelato.mk)
+$(call inherit-product, device/lge/gelato/device.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common.mk)
@@ -35,7 +35,7 @@ else
     ifdef CYANOGEN_RELEASE
         CMVERSION := CyanogenMod-7.2.0-RC1
     else
-        CMVERSION := CyanogenMod-7.2.0-RC1-$(PRODUCT_MODEL)-BobZhome-$(shell date +%Y%m%d)
+        CMVERSION := CyanogenMod-7.2.0-RC1-$(PRODUCT_MODEL)-teamgelato-$(shell date +%Y%m%d)
     endif
 endif
 
