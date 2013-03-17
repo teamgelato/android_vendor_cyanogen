@@ -8,7 +8,7 @@
 #    $(PRODUCT_COPY_FILES)
 
 # Inherit device configuration for the gelato.
-$(call inherit-product, device/lge/gelato/device.mk)
+$(call inherit-product, device/lge/gelato/full_gelato.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common.mk)
@@ -35,7 +35,7 @@ else
     ifdef CYANOGEN_RELEASE
         CMVERSION := CyanogenMod-7.2.0-RC1
     else
-        CMVERSION := CyanogenMod-7.2.0-RC1-$(PRODUCT_MODEL)-teamgelato-$(shell date +%Y%m%d)
+        CMVERSION := CyanogenMod-7.2.0-RC1-$(PRODUCT_MODEL)-qnhoang81-$(shell date +%Y%m%d)
     endif
 endif
 
