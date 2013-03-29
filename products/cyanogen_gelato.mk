@@ -27,15 +27,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=gelato BUILD_UTC_DATE=0 BUILD_ID=GW
 PRODUCT_PACKAGES += \
         LiveWallpapersPicker \
 
-#CYANOGEN_NIGHTLY := true
-
 ifdef CYANOGEN_NIGHTLY
-        CMVERSION := CyanogenMod-7.2.0-RC1-$(shell date +%Y%m%d)-NIGHTLY
+        CMVERSION := CyanogenMod-7.2.0-$(shell date +%Y%m%d)-NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
-        CMVERSION := CyanogenMod-7.2.0-RC1
+        CMVERSION := CyanogenMod-7.2.0
     else
-        CMVERSION := CyanogenMod-7.2.0-RC1-$(PRODUCT_MODEL)-qnhoang81-$(shell date +%Y%m%d)
+        CMVERSION := CyanogenMod-7.2.0-$(PRODUCT_MODEL)-teamgelato-alpha-$(shell date +%Y%m%d)
     endif
 endif
 
